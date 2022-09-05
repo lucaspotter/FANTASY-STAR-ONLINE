@@ -64,7 +64,7 @@ def setupDataframe():
 
 	print("Setting up data...")
 
-	df = nfl.import_pbp_data(year, downcast=False, cache=True)
+	df = nfl.import_pbp_data(year, downcast=False, cache=False)
 	df = pd.DataFrame(df, columns=["game_id", "desc"])
 
 
@@ -92,5 +92,5 @@ def pbpData():
 if __name__ == "__main__":
 	p.scrape()
 # print("Welcome to Fantasy Star Online, the only fantasy tool which has a pun as it's name.")
-# setupDataframe()
-# menu()
+#	setupDataframe()
+#	menu()
